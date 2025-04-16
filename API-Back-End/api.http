@@ -1,0 +1,31 @@
+POST http://localhost:3000/events
+Content-Type: application/json
+
+
+{
+  "title": "New Event222",
+  "detail": "Details about the new event",
+  "maxAttendees": 1
+}
+
+###
+
+POST http://localhost:3000/events/ae370cb5-1c70-451e-b58c-f1202eb39061/attendees
+Content-Type: application/json
+
+
+{   
+    "name": "Andre Moreira Cidre",
+    "email": "chaaalalsa@lololo.com"
+  
+}
+
+###
+GET http://localhost:3000/events/ae370cb5-1c70-451e-b58c-f1202eb39061
+
+
+###
+GET http://localhost:3000/attendees/1/badge
+
+###
+GET http://localhost:3000/attendees/ae370cb5-1c70-451e-b58c-f1202eb39061/attendees?query=carlos
